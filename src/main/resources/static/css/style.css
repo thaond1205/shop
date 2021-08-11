@@ -1,0 +1,21 @@
+.poly-item img{
+    height: 150px;
+    max-width:95%
+}
+
+.poly-item .panel-title{
+    font-size: smaller;
+}
+
+.poly-item-detail img{
+    max-width:80%;
+}
+
+.footer{
+	border-radius: 5px; 
+	margin-top: 650px;
+	color: white;
+	height: 100px;
+	clear: both;
+	margin-bottom: 20px
+}

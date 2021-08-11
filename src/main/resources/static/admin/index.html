@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="dynamic(main)">
+<head>
+<meta charset="UTF-8">
+<title>Viking Shop - Uy Tín, Chất Lượng</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+</head>
+<body class="container" ng-app="admin-app">
+	<header class="row">
+		<h2 class="alert alert-success">Website Adimin</h2>
+	</header>
+	<div class="row">
+		<nav class="navbar navbar-inverse" style="font-variant: small-caps">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav">
+					<li><a href="/">Home</a></li>
+					<li><a href="#!product">Products</a></li>
+					<li><a href="#!authorize">Authorizing</a></li>
+					<li><a href="/security/logoff">Sign Off</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<main>
+		<p class="ng-view"></p>
+	</main>
+	<footer class="row"></footer>
+	<script src="/admin/admin-app.js"></script>
+	<script src="/admin/product/product-ctrl.js"></script>
+	<script src="/admin/authority/authority-ctrl.js"></script>
+</body>
+</html>
